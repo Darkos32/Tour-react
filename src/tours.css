@@ -1,25 +1,96 @@
 /**GENERAL TAGS*/
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+p {
+  font-size: 0.85rem;
 }
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/**TITLE STYLES */
-.title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/**SECTION STYLE*/
+section {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
 }
-.title h2{
-    margin-bottom: 0.3rem;
+section img {
+  width: 100%;
+  align-self: center;
+  border-radius: 1%;
+  height: 320px;
+}
+/***ARTICLE STYLES*/
+article {
+  width: 70%;
+  align-self: center;
+  margin-top: 3rem;
+  box-shadow:  0 5px 15px  rgba(0, 0, 0, 0.2);
+}
+article:hover{
+  animation-name: shadow;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+/**FOOTER STYLES*/
+footer {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: auto auto;
+  padding: 1rem;
+  width: 95%;
+}
+footer p{
+  grid-column: 1/3;
+}
+
+/**CLASS STYLES*/
+.price{
+  color:rgb(0, 183, 255) ;
+  align-self: end;
+  justify-self: end;
+  text-align: end;
+  text-justify: end;
+}
+/**TITLE STYLES */
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title h2 {
+  margin-bottom: 0.3rem;
+  margin-top: 5rem;
+  font-size: 40px;
+  /* line-height: 1rem; */
 }
 .title div {
-  background-color: rgb(113, 113, 233);
+  background-color: rgb(77, 238, 250);
   height: 5px;
-  width: 60%;
+  width: 10%;
   margin-top: 0rem;
+}
+.not-interested{
+  width: 50%;
+  margin: 0 40%;
+  background-color: #ffffff;
+  color: red;
+  border: red 1px solid;
+  border-radius: 0.2rem;
+}
+.show{
+  border: none;
+  padding: 0%;
+  height: 1rem;
+  display: inline;
+  color: rgb(0, 183, 255);
+}
+@keyframes shadow{
+  to{box-shadow:  0 5px 15px  rgba(0, 0, 0, 0.2);};
+  from{box-shadow:  0 5px 15px  rgba(0, 0, 0, 1);}
 }
